@@ -4,24 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <header>
-        <p>26</p>
-        <div>
-            <p>nov</p>
-            <p>2020</p>
-        </div>
-        <p>Thursday</p>
-    </header>
+    <div class="container">
+        <header>
+            <div class="date text-center">
+                <h1 id="nameday">Thursday, </h1>
+                <h1 id="numday">26</h1>
+                <h1 id="month">nov</h1>
+                <h1 id="Year">2020</h1>
+                
+            </div>
+        </header>
 
-    <input type="text">
-    <input type="button" value="add">
+        <form class="add text-center my-4">
+            <label>Add a new todo by typing and then pressing <kbd>enter</kbd> in the
+            field below.</label>
 
-    <div id="tasks">
-        <p>Estudar programação</p>
-        <input type="button" value="button">
+            <input class="form-control m-auto" type="text" name="add">
+        </form>
+
+        <ul class="list-group todos mx-auto">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Terminar essa merda de projeto</span>
+                <div class="buttons">
+                    <i class="far fa-trash-alt delete"></i>
+                <i><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                  </svg></i>
+                </div>
+                
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Terminar essa merda de projeto</span>
+                <div class="buttons">
+                    <i class="far fa-trash-alt delete"></i>
+                <i><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                  </svg></i>
+                </div>
+        </ul>
     </div>
 
     

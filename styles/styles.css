@@ -2,6 +2,32 @@ body {
     background-color: #C4C4C4;
 }
 
-body header {
-    font: bold;
+body .container header .date h1 {
+    display: inline;
+    
 }
+
+body .container form input {
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+}
+body .container form input:focus {
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.todos li {
+    background-color: #dadada;
+}
+
+
+
+.todos .delete {
+    cursor: pointer;
+    margin: 0.5rem;
+  }
+
+.bi-check2 {
+    cursor: pointer;
+    margin: 0.5rem;
+  }
